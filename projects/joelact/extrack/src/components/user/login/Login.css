@@ -1,27 +1,28 @@
 @media all and (min-width: 480px) {
-    .Login {
-      padding: 60px 0;
-    }
-  
-    .Login form {
-      margin: 0 auto;
-      max-width: 336px;
-    }
+  .Login {
+    padding: 60px 0;
+  }
 
-    .Login .label {
-        width: 80px;
-        height: 20px;
-        display: inline-block;
-    }
-    
-    .Login .group {
-        margin: 4px;
-    }
+  .Login form {
+    margin: 0 auto;
+    max-width: 360px;
+  }
 
-    .Login button {
-        display: flex;
-        float: right;
-        margin: 4px;
-    }
+  .Login .label {
+    display: inline-block;
+    padding: 0;
+  }
+
+  .Login .group {
+    margin: 4px;
+  }
+
+  .Login button {
+    display: flex;
+    justify-content: center;
+    float: right;
+    align-items: flex-end;
+    max-width: 100px;
+    margin: 4px;
+  }
 }
-  
