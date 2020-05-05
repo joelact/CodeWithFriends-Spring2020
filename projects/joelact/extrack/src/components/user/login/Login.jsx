@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Button, FormGroup, FormControl, FormLabel } from 'react-bootstrap';
-import './Login.css';
 import LoginService from '../../../services/user/LoginService';
+import './Login.css';
 
-export default class Login extends React.Component {
+export default class Login extends Component {
     constructor(props) {
         super(props);
         this.loginService = new LoginService();
@@ -16,11 +16,12 @@ export default class Login extends React.Component {
             .then((data) => {
                 console.log(data);
                 console.timeEnd('perf');
+                window.location = '/dashboard';
             })
             .catch((error) => {
                 console.log(error);
             });
-    }
+    };
 
     render() {
         return (
